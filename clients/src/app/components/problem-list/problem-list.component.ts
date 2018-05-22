@@ -18,4 +18,8 @@ export class ProblemListComponent implements OnInit {
   getProblems(): void {
     this.subscriptionProblems = this.data.getProblems().subscribe(problems => this.problems = problems);
   }
+
+  ngOnDestroy() {
+    
+  }
 }

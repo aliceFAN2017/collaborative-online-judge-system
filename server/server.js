@@ -9,5 +9,5 @@ mongoose.connect('mongodb://coj:coj@ds229690.mlab.com:29690/coj');
 app.use(express.static(path.join(__dirname, '../public')))
 app.use('/', indexRouter);
 app.use('/api/v1', restRouter);
-
+app.use((req, res) => res.sendFile('index.html', { root: path.join(__dirname, '../public/')}))
 app.listen(3000, () => console.log('App listening on port 3000!'))
