@@ -40,7 +40,8 @@ export class AuthService {
   public authenticated() {
     // Check if there's an unexpired jwt
     // This searches for an item in localStorage with key = 'id_token'
-    return localStorage.getItem('id_token') !== null;
+    // return localStorage.getItem('id_token') !== null;
+    return tokenNotExpired('id_token');
   }
 
   public logout() {
