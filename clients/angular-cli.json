@@ -23,7 +23,10 @@
       ],
       "scripts": [
         "../node_modules/jquery/dist/jquery.js",
-        "../node_modules/bootstrap/dist/js/bootstrap.js"
+        "../node_modules/bootstrap/dist/js/bootstrap.js",
+        "../node_modules/ace-builds/src-noconflict/ace.js",
+        "../node_modules/ace-builds/src-noconflict/theme-eclipse.js",
+        "../node_modules/ace-builds/src-noconflict/mode-java.js"
       ],
       "environments": {
         "source": "environments/environment.ts",
